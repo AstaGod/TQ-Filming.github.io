@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: #b50000;
     color: white;
     padding: 20px;
     text-align: center;
@@ -57,28 +57,30 @@ section h2 {
 /* Carousel styles */
 .carousel-container {
     position: relative;
-    width: 100%; /* Ancho ajustable, cámbialo al valor que prefieras */
-    max-width: 1100px; /* Establece el ancho máximo */
+    width: 80%;
+    max-width: 700px;
     margin: 20px auto;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgb(0, 0, 0);
-    height: 600px; /* Ajusta la altura si es necesario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 500px; /* Altura ajustada para permitir imágenes más grandes */
 }
+
 .carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
 .carousel-image {
-    width: 100%; /* Hace que cada imagen se ajuste al ancho del contenedor */
-    max-height: 100%; /* Hace que la imagen se ajuste sin salir del contenedor */
-    object-fit: cover;
+    max-height: 100%; /* Mantiene la altura de las imágenes */
+    max-width: 100%; /* Limita el ancho de las imágenes */
+    object-fit: contain; /* Permite que las imágenes se adapten dentro del contenedor sin distorsión */
     border-radius: 10px;
     flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 /* Carousel buttons */
 button#prev, button#next {
