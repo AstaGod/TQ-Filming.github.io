@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TQ Filming</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="icon" href="./Recursos/Imagenes/LOGO-DE-EMPRESA-JMA.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>TQ Filming</h1>
+        <p>Capturamos tus mejores momentos</p>
+    </header>
+
+    <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="servicios" class="background">
+        <h2>Nuestros Servicios</h2>
+        <p>Ofrecemos filmación de eventos, comerciales, videos musicales, y mucho más.</p>
+    </section>
+
+    <section id="portafolio" class="background">
+        <h2>Portafolio</h2>
+        <p>Mira algunos de nuestros proyectos recientes.</p>
+        
+        <!-- Contenedor del carrusel -->
+        <div class="carousel-container">
+            <button id="prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel">
+                <img src="./Recursos/Imagenes/1.jpg" class="carousel-image" alt="Imagen 1">
+                <img src="./Recursos/Imagenes/2.jpg" class="carousel-image" alt="Imagen 2">
+                <img src="./Recursos/Imagenes/3.jpg" class="carousel-image" alt="Imagen 3">
+            </div>
+            <button id="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section id="contacto" class="background">
+        <h2>Contacto</h2>
+        <p>¿Quieres saber más? Contáctanos en info@filmacionesxyz.com o llámanos al +51 901 540 374.</p>
+        
+        <!-- Redes sociales -->
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/profile.php?id=100089760150058" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/tq_filming/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/51901540374" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.tiktok.com/@theqoryfilming" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://youtube.com/@theqoryfilming-m2n" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://x.com/AstaGod171798" target="_blank"><i class="fab fa-twitter"></i></a> 
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TQ Filming - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- JavaScript para el carrusel -->
+    <script src="./carrusel.js"></script>
+</body>
+</html>
